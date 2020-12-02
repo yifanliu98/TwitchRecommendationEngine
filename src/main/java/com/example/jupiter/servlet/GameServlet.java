@@ -20,8 +20,8 @@ import java.io.IOException;
 public class GameServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String gameName = request.getParameter("game_name");
-        TwitchClient client = new TwitchClient();
 
+        TwitchClient client = new TwitchClient();
         response.setContentType("application/json;charset=UTF-8");
         try {
             if (gameName != null) {

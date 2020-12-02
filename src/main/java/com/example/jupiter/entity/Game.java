@@ -10,7 +10,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 @JsonDeserialize(builder = Game.Builder.class)
 
 public class Game {
-//    annotation
+    // annotation
     @JsonProperty("id")
     private final String id;
 
