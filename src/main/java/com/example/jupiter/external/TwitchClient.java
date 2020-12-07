@@ -34,6 +34,7 @@ public class TwitchClient {
     private String searchTwitch(String url) throws TwitchException {
         CloseableHttpClient httpclient = HttpClients.createDefault();
 
+        // Executing the request using response handler
         ResponseHandler<String> responseHandler = response -> {
             int responseCode = response.getStatusLine().getStatusCode();
             if (responseCode != 200) {
