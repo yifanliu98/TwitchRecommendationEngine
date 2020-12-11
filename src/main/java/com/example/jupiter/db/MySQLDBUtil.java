@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 public class MySQLDBUtil {
-    private static final String INSTANCE = "webproject.cgaweydjy4xs.us-east-2.rds.amazonaws.com";
+    private static final String INSTANCE = "twitchgame.cgaweydjy4xs.us-east-2.rds.amazonaws.com";
     private static final String PORT_NUM = "3306";
     private static final String DB_NAME = "jupiter";
     public static String getMySQLAddress() throws IOException {
