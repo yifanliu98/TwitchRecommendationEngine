@@ -19,8 +19,8 @@ import org.json.JSONObject;
 
 
 public class TwitchClient {
-    private static final String TOKEN = "Bearer j9kshqqblzc1lk5o34ftuegqmjmbkf";
-    private static final String CLIENT_ID = "qmw2e95aclsaf4i0pxd71n0kpm1x5e";
+    private static final String TOKEN = "Bearer vrbin75r0hj65p2tfm5qg82eq5qn0y";
+    private static final String CLIENT_ID = "9ccxgt1u6wn5z3j8y49k4bv2ygnzto";
     private static final String TOP_GAME_URL_TEMPLATE = "https://api.twitch.tv/helix/games/top?first=%s";
     private static final String GAME_SEARCH_URL_TEMPLATE = "https://api.twitch.tv/helix/games?name=%s";
     private static final int DEFAULT_GAME_LIMIT = 20;

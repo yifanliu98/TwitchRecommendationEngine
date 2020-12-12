@@ -18,15 +18,17 @@ public class SearchServlet extends HttpServlet {
         String gameId = request.getParameter("game_id");
         if (gameId == null) {
             // bad request
-            // response.setStatus(400);
+            // response.setStatus(
+            // 00);
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
 
         TwitchClient client = new TwitchClient();
         try {
-            response.setContentType("application/json;charset=UTF-8");
-            response.getWriter().print(new ObjectMapper().writeValueAsString(client.searchItems(gameId)));
+//            response.setContentType("application/json;charset=UTF-8");
+//            response.getWriter().print(new ObjectMapper().writeValueAsString(client.searchItems(gameId)));
+            ServletUtil.writeItemMap(response, client.searchItems(gameId));
         }
         catch (TwitchException e) {
             throw new ServletException(e);
